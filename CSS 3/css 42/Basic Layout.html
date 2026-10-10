@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: slategray;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            border: 1px solid black;
+            width: 1000px;
+            background: white;
+            margin: 0 auto;
+        }
+
+        #header {
+            background: crimson;
+            color: white;
+            height: 100px;
+        }
+
+        #header h1 {
+            padding: 30px 0 0 20px;
+
+        }
+
+        #menu {
+            background: lightsalmon;
+
+        }
+
+        #menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li a {
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu li a:hover {
+            background-color: crimson;
+            color: white;
+        }
+
+        #content {
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        #sidebar {
+            background: lightblue;
+            width: 200px;
+            float: right;
+            min-height: 500px;
+        }
+
+        #sidebar a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer {
+            background: lightsalmon;
+            clear: both;
+            text-align: right;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width:1020px) {
+            #wrapper {
+                width: 800px;
+
+            }
+
+            #content {
+                width: 80%;
+            }
+
+            #sidebar {
+                width: 18%;
+            }
+        }
+
+        @media screen and (max-width:810px) {
+            #wrapper {
+                width: 500px;
+            }
+
+            #content {
+                width: 65%;
+            }
+
+            #sidebar {
+                width: 34%;
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            #wrapper {
+                width: auto;
+            }
+
+            #content {
+                width: 100%;
+                float: none;
+            }
+
+            #sidebar {
+                width: 100%;
+                float: none;
+            }
+
+            #header h1 {
+                padding: 30px 0 0 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Mayur Piprewar</h1>
+        </div>
+
+
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallary</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2>Design Basic Layout</h2>
+            <p>Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus atque molestiae a quisquam
+                quod quos error architecto illo dolore ex cupiditate adipisci exercitationem inventore libero aliquid
+                repudiandae, doloribus distinctio consequuntur? dolor sit amet consectetur adipisicing elit. Nobis
+                exercitationem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore culpa consequuntur
+                quibusdam eos ab unde minus at porro vitae quia ipsum fugit excepturi doloribus quidem, praesentium
+                dolorum, magni repellat soluta. ratione incidunt neque, unde ipsum iste laborum inventore pariatur autem
+                deleniti! Dicta
+                architecto dolore eos numquam cum et deleniti velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem ratione incidunt neque,
+                unde ipsum iste laborum inventore pariatur autem deleniti! Dicta architecto dolore eos numquam cum et
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti aspernatur officia quo, vel
+                perspiciatis est Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed harum delectus
+                voluptates voluptas. Fugit ipsa hic illo excepturi molestiae deleniti consequatur odio, eligendi
+                consectetur, soluta voluptatibus labore dolore voluptas? molestiae blanditiis amet nostrum eum facere
+                nisi velit incidunt explicabo accusantium
+                ducimus unde illo. deleniti velit.</p>
+        </div>
+
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallary</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            Mayurpiprewar@copyright2018
+        </div>
+    </div>
+</body>
+
+</html>

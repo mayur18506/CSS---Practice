@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective</title>
+</head>
+<style>
+    .base {
+        width: 350px;
+        height: 250px;
+        font-size: 18px;
+        text-align: center;
+        background: grey;
+        margin: 100px 0 0 100px;
+        perspective: 800px;
+        perspective-origin: top right;
+
+    }
+
+    #box {
+        width: 350px;
+        height: 250px;
+        background: tomato;
+
+        /* transform-origin: right center; */
+        transform: rotatey(60deg);
+    }
+</style>
+
+<body>
+    <h1>Perspective</h1>
+
+    <div class="base">
+        <div id="box">Mayur</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Properties</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        #box {
+            width: 400px;
+            padding: 25px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+            font-size: 1em;
+            font-family: Arial;
+            line-height: 35px;
+            font-weight: normal;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+
+        #box2 {
+            width: 400px;
+            padding: 25px;
+            border: 2px solid red;
+            font: oblique small-caps bold 1em/35px ariel;
+        }
+
+        #box2 span {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mayur Piprewar : Font Properties</h1>
+
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi rem reiciendis eveniet accusamus aut voluptate
+        quas magni nemo explicabo.
+    </div>
+
+    <div id="box2">
+        Lorem ipsum dolor <span>mayur piprewar </span>sit amet consectetur adipisicing elit. Non nisi rem reiciendis
+        eveniet accusamus aut voluptate
+        quas magni nemo explicabo.
+    </div>
+</body>
+
+</html>

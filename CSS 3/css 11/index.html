@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern UI Made Easy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #0e0b29;
+      color: #fff;
+    }
+
+    header {
+      background: #1c178a;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    header .btn {
+      background: #e8324c;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+      background: linear-gradient(120deg, #0a043c, #1b1464);
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #d2d2f7;
+      margin-bottom: 25px;
+    }
+
+    .hero-text button {
+      background: #e8324c;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #c8213d;
+    }
+
+    .hero img {
+      width: 380px;
+      border-radius: 10px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #1c178a;
+      padding: 50px 20px;
+      gap: 20px;
+    }
+
+    .card {
+      background: #28237a;
+      padding: 25px;
+      border-radius: 12px;
+      width: 200px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #3a35a0;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      background: #100d2f;
+      padding: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+    <script src="index.js"></script>
+
+  <header>
+    <div class="logo"><strong>Progress Telerik</strong></div>
+    <nav>
+      <a href="#">Demos</a>
+      <a href="#">Docs</a>
+      <a href="#">Support</a>
+      <a href="#">Pricing</a>
+      <a href="#" class="btn">Free Trial</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Modern UI Made Easy</h1>
+      <p>
+        Build feature-rich, modern experiences for Web, Cross-Platform,
+        Mobile and Desktop faster than ever with Telerik and Kendo UI
+        components.
+      </p>
+      <button>Download DevCraft Trial</button>
+    </div>
+    <img src="WhatsApp Image 2025-02-03 at 21.34.18_d5f76b3d.jpg" alt="Developer">
+  </section>
+
+  <section class="features">
+    <div class="card"><h3>Web Components</h3></div>
+    <div class="card"><h3>Desktop Components</h3></div>
+    <div class="card"><h3>Mobile Components</h3></div>
+    <div class="card"><h3>Reporting & Dashboards</h3></div>
+    <div class="card"><h3>Testing & Debugging</h3></div>
+    <div class="card"><h3>UI/UX Tools</h3></div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Progress Telerik | Kendo UI | All Rights Reserved
+  </div>
+
+</body>
+</html>

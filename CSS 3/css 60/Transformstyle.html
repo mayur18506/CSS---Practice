@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform style</title>
+</head>
+<style>
+    div {
+        font-size: 20px;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+    .parent {
+        width: 400px;
+        height: 250px;
+        margin: 0 0 70px 100px;
+        background-color: grey;
+        perspective: 800px;
+        transform: rotateY(30deg);
+        transform-style: preserve-3d;
+    }
+
+    #box {
+        width: 400px;
+        height: 250px;
+        background-color: pink;
+        padding-top: 20px;
+        transform: rotateX(60deg);
+    }
+</style>
+
+<body>
+    <h1>Transform style</h1>
+    <div class="parent">
+        <div id="box"> Mayur</div>
+    </div>
+</body>
+
+</html>

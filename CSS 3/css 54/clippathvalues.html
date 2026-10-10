@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+</head>
+<style>
+    #box {
+        background: orangered;
+        width: 400px;
+        height: 400px;
+        clip-path: shape(from 0% 0%,
+                arc to 100% 0% of 600px,
+                line to 100% 70%,
+                arc to 0% 70% of 600px,
+                close);
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div id="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae delectus optio rerum esse tempora
+        nisi consequuntur maiores aspernatur, earum iure beatae officia facilis magni quo assumenda ab placeat fugit.
+        Accusantium quisquam asperiores perferendis nesciunt nostrum sapiente, debitis ab impedit tenetur reiciendis
+        animi at, nihil fugiat, earum quia nobis aliquid aperiam. </div>
+</body>
+
+</html>
+<!-- /* clip-path: shape(from 100% 0%,
+                curve to 50% 0% with 25% 0%, curve to 100% 50% with 75% 0%,
+                line to 100% 100%, line to 0% 100%,
+                close); -->
